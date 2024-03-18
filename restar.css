@@ -1,0 +1,23 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	height:100px;
+	width:150px;
+	background:orange;
+	margin:auto;
+}
+input{
+	display: grid;
+	place-items: center;
+	border: solid 1px #fff;
+	height: 60%;
+	width: 70%;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 2rem;
+	font-weight: bold;
+	background-color: #ff748c;
+	text-align: center;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+<form action="" name="formulario" method="get"> 
+<img src="img/user.jfif" alt="user-img">
+<label for="text">Usuario</label>
+<input type="text" name="nombre"id="nombre" maxlength="30" placeholder="Nombre">
+<br>
+<label for="password">Contraseña</label>
+<input type="password" id="password" placeholder="Contraseña">
+<div class="box-visible">
+<input type="checkbox" id="visible">
+<label for="visible">Mostrar Contraseña</label>
+</div>
+<br>
+<input type="checkbox" name="terminos" id="terminos">Terminos y Condiciones
+<button type="submit" id="submit" name="btn">Iniciar Sesion</button>
+</form>
+</body>
+<script>
+(function(){
+var formulario = document.getElementsByName('formulario')[0],
+    elementos = formulario.elements,
+    boton = document.getElementById('btn');
+
+var validarNombre = function(e){
+	if (formulario.nombre.value == 0) {
+		alert("Completa el campo nombre");
+		e.preventDefault();
+	}
+};
+var validarCheckbox = function(e){
+	if (formulario.terminos.checked == false) {
+		alert("Acepta los Terminos");
+		e.preventDefault();
+	}
+}
+var validar = function(e){
+	validarNombre(e);
+	validarCheckbox();
+};
+formulario.addEventListener("submit", validar);
+
+}())
+</script>
+<script src="js/login.js"></script>
+</html>

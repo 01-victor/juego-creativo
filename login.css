@@ -1,0 +1,38 @@
+*{
+	padding:0px;
+	margin:0px;
+    box-sizing: border-box;
+}
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: linear-gradient(to right, #3C4E14, #ce1d61);
+}
+form {
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	text-align: center;
+	padding: 20px 25px;
+}
+form.title {
+	color: #252525;
+	font-size: 35px;
+	font-weight: 800;
+	margin-bottom: 30px;
+}
+form label{
+	margin-bottom: 35px;
+
+}
+form button{
+	color: #fff;
+	border: none;
+	background: linear-gradient(to right, #1157B0, #ce1d61);
+	padding: 10px 15px;
+	cursor: pointer;
+	font-size: 20px;
+	border-radius: 50%;
+}

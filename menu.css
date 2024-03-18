@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    background: #c0c0c0;
+}
+body{
+    height: 750px;
+    width: 750px;
+    display: grid;
+    background: orange;
+    margin: auto;
+}
+header{
+    height:250px;
+    width:750px;
+    background:red; 
+}
+nav{
+    width: 750px;
+    height:50px;
+    background:blue;
+    list-style:none;    
+}
+main{
+    height: 400px;
+    background: blue;
+}
+#lado_izquierdo{
+    height:400px;
+    width:150px;
+    background:#ede313;
+    float:left:
+}
+#lado_derecho{
+    height:400px;
+    width:100px;
+    background:#ede313;
+    float:right;
+}
+#banner{
+    width:500px;
+    height:250px;
+    background:#000;
+    float:right;
+}
+#logo{
+    width:250px;
+    height:125px;
+    background:#61FF33; 
+    float:left;
+}
+audio{
+    width: 250px;
+    height: 50px;
+}
+#buscador{
+    width: 250px;
+    height: 250px;
+    background:#6833FF; 
+    float:left;
+}
+nav{
+    height:70px;
+    background:blue;
+    list-style:none;    
+}
+nav a{
+    list-style:none;
+    float:left;
+    font-weight: bold;
+}
+nav a{
+    display: grid;
+    place-items: center;
+    border: solid 1px #blue;
+    height: 90px;
+    width:90px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #ff748c;
+    display: flex;
+    
+}
+nav ul li{
+    float:left;
+}
+
+article{
+    width:550px;
+    height:400px;
+    background:#7D91DA;
+    float:right;
+}
+
+footer{
+    height:50px;
+    background:orange;  
+}
+#menu ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+#menu #item{
+    float:left;
+}
+#menu #item a{
+    background:#3349FF;
+    color:#fff;
+    padding:12px 22px;
+    display:block;
+    font-family:Arial;
+    font-size:16px;
+    text-decoration:none;
+}
+#menu #desple{
+    display:none;
+}
+#menu #item a:hover{
+    background:#FF33BB;
+    color:#fff;
+} 
+#menu #item:hover #desple{
+    display:block;
+}
